@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #210344;
+}
+
+.head-btns {
+  color: white;
+  background-color: orange;
+  border-radius: 8px;
+  font-size: 16px;
+  border: none;
+  height: fit-content;
+  padding: 12px 20px;
+  margin: 4px;
+}
+
+#header1 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+#header2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#head-btn-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3px;
+  margin-right: 7px;
+}
+
+#head-label {
+  margin-left: 20px;
+  margin-top: 30px;
+  text-align: left start;
+  color: #ff3e04;
+  font-size: 32px;
+  line-height: 60px;
+  white-space: nowrap;
+}
+
+.head-btns {
+  width: 230px;
+  outline: none;
+  float: right;
+}
+
+.head-btns:hover {
+  border: white solid 2px;
+}
+
+#header2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#search-box {
+  background-color: beige;
+  transition: 0.4s;
+  width: fit-content;
+  border-radius: 40px;
+  height: 40px;
+  padding: 10px;
+}
+
+.search-txt {
+  width: 0px;
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  transition: 0.4s;
+  line-height: 40px;
+  font-size: 16px;
+}
+
+#icon {
+  color: white;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #210344;
+  transition: 0.4s;
+}
+
+#head2-container:hover .feeling-lucky {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0%, 0%);
+}
+
+#head2-container:hover .search-txt {
+  width: 464px;
+  padding: 0 6px;
+}
+
+.search-txt:not(:placeholder-shown), .search-txt:focus {
+  width: 464px;
+  padding: 0 6px;
+}
+
+#icon:hover {
+  background-color: orange;
+}
+
+.feeling-lucky {
+  display: flex;
+  color: black;
+  background: beige;
+  border-radius: 3px;
+  font-size: 16px;
+  border: none;
+  height: fit-content;
+  width: fit-content;
+  padding: 12px 20px;
+  margin: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.2s linear, opacity 0.2s linear;
+  transform: translate(0%, -100%);
+  transition: 0.4s;
+}

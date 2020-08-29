@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Images</title>
+    <link rel="stylesheet" href="project1.css">
+    <script src="https://kit.fontawesome.com/b6f67b378e.js" crossorigin="anonymous"></script>
+    <style>
+        #container{
+            position: absolute;
+            top: 50%;
+            margin-top: -80px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        #head2-container{
+            white-space: nowrap;
+            width: 550px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="header1">
+        <div id="head-btn-container">
+            <a href="googleSearch.html"><button class="head-btns">Google Search</button></a>
+        </div>
+    </div>
+    <div id="container">
+        <div id="head2-container">
+            <form action="https://www.google.com/search" id="header2">
+                <div class="label" style="margin-bottom: 12px;">
+                    <img src="images/Logo.png" alt="GOOGLE" style="position: relative; top: 0px;left: 30px;">
+                    <span style="position: relative; bottom: 0px;right: 30px; color: #4285f4;font-size: 18px;">Images</span>
+                </div>
+                <div id="search-box">
+                <input type="hidden" name="tbm" value="isch">
+                 <input type="text" placeholder="Search" name="q" autofocus class="search-txt" autocomplete="off" spellcheck="false">
+                 <button style=" background:none; outline: none;border: none; border-radius: 50%; cursor: pointer;"> <i id="icon" class="fas fa-search"></i> </button>
+                </div>
+              </form>
+        </div>
+    </div>
+</body>
+</html>

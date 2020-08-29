@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search</title>
+    <link rel="stylesheet" href="project1.css">
+    <script src="https://kit.fontawesome.com/b6f67b378e.js" crossorigin="anonymous"></script>
+    <style>
+        #container{
+            position: absolute;
+            top: 50%;
+            margin-top: -80px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        #head2-container{
+            white-space: nowrap;
+            width: 550px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="header1">
+        <div id="head-btn-container">
+             <a href="googleImageSearch.html"><button class="head-btns">Google Image Search</button></a>
+             <a href="googleAsearch.html"><button class="head-btns">Google Advanced Search</button></a>
+        </div>
+      </div>
+      
+    <div id="container">
+        <div id="head2-container">
+            <form action="https://www.google.com/search" id="header2">
+                <div class="label" style="margin-bottom: 12px;">
+                    <img src="images/Logo.png" alt="GOOGLE" style="position: relative; top: 0px;left: 0px;">
+                </div>
+                <div id="search-box">
+                 <input type="text" placeholder="Search" name="q" class="search-txt" autocomplete="off" spellcheck="false" autofocus>
+                 <button style=" background:none; outline: none;border: none; border-radius: 50%; cursor: pointer;"> <i id="icon" class="fas fa-search"></i> </button>
+                </div>
+            
+                <div>
+                  <button class="feeling-lucky" type="submit" name="btnI">I'm Feeling Lucky</button>
+                </div>
+              </form>
+        </div>
+    </div>
+</body>
+</html>
