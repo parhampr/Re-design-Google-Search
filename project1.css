@@ -21,6 +21,7 @@ body {
   justify-content: space-between;
   margin-top: 10px;
   margin-right: 10px;
+  min-width: 640px;
 }
 
 #header2 {
@@ -54,6 +55,23 @@ body {
 
 .head-btns:hover {
   border: white solid 2px;
+}
+
+#container {
+  position: absolute;
+  top: 50%;
+  margin-top: -80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  min-width: 640px;
+}
+
+#head2-container {
+  white-space: nowrap;
+  width: 550px;
+  display: flex;
+  justify-content: center;
 }
 
 #header2 {
