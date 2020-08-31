@@ -171,7 +171,7 @@ body {
 .Asearch {
   color: black;
   font-size: 16px;
-  background: white;
+  background: beige;
   border: none;
   border-radius: 2px;
   outline: none;
@@ -190,7 +190,23 @@ label[for="Ase"] {
   white-space: nowrap;
 }
 
-label[for="I"] {
+label[for="hint"] {
   font-size: 16px;
   color: white;
+  line-height: 40px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.hint-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: fit-content;
+}
+
+@media (max-width: 1250px) {
+  label[for="hint"] {
+    display: none;
+  }
 }

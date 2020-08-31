@@ -13,6 +13,15 @@
             border: 0.5px solid #520dac;
             opacity: 0.6;
         }
+        #pt{
+                width: 960px; height: auto;
+            }
+            #fp{
+                float: left; color: white;font-size: 24px;font-weight: 90px; margin-left: 16px;
+            }
+            #tdt{
+                float: right; font-weight: bold;color: rgb(201, 194, 194); font-size: 19px;
+            }
     </style>
 </head>
 <body>
@@ -25,6 +34,17 @@
     <div>
         <hr>
     </div>
+    <div id="pt">
+        <br>
+        <div id="fp">
+            <label>Find Pages with...</label>
+        </div>
+        <div id="tdt">
+            <label>To do this in the search box.</label>
+        </div>
+    </div>
+    <br><br>
+<div style="display: flex; flex-direction: row; justify-content: space-between; width: fit-content;">
     <form class="form" action="https://www.google.com/search" method="GET">
      <div class="field-hori">
        <label for="Ase">all these words</label>
@@ -46,5 +66,12 @@
         <button id="Asearch-btn" type="submit" >Advanced Search</button>
      </div>
     </form>
+    <div class="hint-box">
+        <label for="hint">Type the important words: tri-colour rat terrier</label>
+        <label for="hint">Put exact words in quotes: "rat terrier"</label>
+        <label for="hint">Type OR between all the words you want: miniature OR standard</label>
+        <label for="hint">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</label>
+    </div>
+</div>
 </body>
 </html>
