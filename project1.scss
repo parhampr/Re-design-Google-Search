@@ -20,7 +20,7 @@ body{
     justify-content: space-between;
     margin-top: 10px;
     margin-right: 10px;
-    min-width: 640px;
+    min-width: 750px;
 }
 #header2{
     display: flex;
@@ -89,7 +89,6 @@ body{
     transition: 0.4s;
     line-height: 40px;
     font-size: 16px;
-    
 }
 
 #icon{
@@ -142,4 +141,44 @@ body{
     cursor: pointer;
     outline: none;
 
+}
+.field-hori{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+.form{
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+margin-left: 18px;
+width: fit-content;
+}
+.Asearch{
+    color: black;
+    font-size: 16px;
+    background: white;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    width: 450px;
+    height: 14px;
+    padding: 10px;
+    text-align: left;
+    margin-left: 25px;
+}
+label[for="Ase"]{
+    font-size: 16px;
+    color:white;
+    margin-right: 16px;
+    line-height: 30px;
+    white-space: nowrap;
+}
+label[for="I"]{
+    font-size: 16px;
+    color:white;
+}
+#Asearch-btn{
+    @extend %head-button;
 }

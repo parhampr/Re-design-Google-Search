@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=750, user-scalable=0.5;" />
     <title>Advanced Search</title>
     <link rel="stylesheet" href="project1.css">
+    <style>
+        hr{
+            width: 98%;
+            margin-left: auto;
+            margin-right: auto;
+            border: 0.5px solid #520dac;
+            opacity: 0.6;
+        }
+    </style>
 </head>
 <body>
     <div id="header1" style="flex-direction: row;">
@@ -14,25 +23,28 @@
         </div>
     </div>
     <div>
-        <hr style="width: 98%;margin-left: auto;margin-right: auto;
-        border: 1px solid #520dac;
-        opacity: 0.8;">
+        <hr>
     </div>
-    <!--
-    <form form class="form" action="https://www.google.com/search" method="GET">
-    <div id="form-label">
-        <label for="FL">all these words: </label>
-        <label for="FL">this exact word or phrase: </label>
-        <label for="FL">any of these words: </label>
-        <label for="FL">none of these words: </label>
-    </div>
-    <div id="form-input">
-       <input type="text" name="" id="">
-    </div>
-    <div id="form-hint">
-         <label for="H">Hello</label>
-    </div>
+    <form class="form" action="https://www.google.com/search" method="GET">
+     <div class="field-hori">
+       <label for="Ase">all these words</label>
+       <input type="text" name="as_q" class="Asearch" autofocus autocomplete="off" spellcheck="false">
+     </div>
+     <div class="field-hori">
+        <label for="Ase">this exact word or phrase</label>
+        <input type="text" name="as_epq" class="Asearch" autocomplete="off" spellcheck="false" >
+     </div>
+     <div class="field-hori">
+        <label for="Ase">any of these words</label>
+        <input type="text" name="as_oq" class="Asearch" autocomplete="off" spellcheck="false" >
+     </div>
+     <div class="field-hori">
+        <label for="Ase">none of these words</label>
+        <input type="text" name="as_eq" class="Asearch" autocomplete="off" spellcheck="false" >
+     </div>
+     <div class="field-hori" style="flex-direction: row-reverse; justify-content: end;">
+        <button id="Asearch-btn" type="submit" >Advanced Search</button>
+     </div>
     </form>
-    -->
 </body>
 </html>
